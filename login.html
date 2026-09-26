@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Client Login | Bhoomi Investment</title>
+  <meta name="description" content="Client portal login for Bhoomi Investment clients to view portfolios, statements and SIPs.">
+  <link rel="canonical" href="https://bhoomiinvestment.org/login.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Client Login | Bhoomi Investment">
+  <meta property="og:description" content="Client portal login for Bhoomi Investment clients to view portfolios, statements and SIPs.">
+  <meta name="theme-color" content="#0b3d2e">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="login">
+  <div id="site-header"></div>
+
+  <main id="main">
+    <div class="auth-wrap">
+      <div class="auth-card">
+        <div class="auth-side">
+          <span class="eyebrow">Client Portal</span>
+          <h2>Your portfolio, anytime</h2>
+          <p>Existing clients can securely access their investments online.</p>
+          <ul class="check-list mt-1">
+            <li><span data-icon="check"></span><span>Consolidated view of mutual funds and investments</span></li>
+            <li><span data-icon="check"></span><span>Download account statements and capital gains reports</span></li>
+            <li><span data-icon="check"></span><span>Track SIPs and transaction history</span></li>
+            <li><span data-icon="check"></span><span>View insurance policies and renewal dates</span></li>
+          </ul>
+          <p class="mt-2 mb-0">Need help? Call <a data-contact="mobile" style="color:var(--gold-400)"></a></p>
+        </div>
+
+        <div class="auth-form">
+          <h2>Client Login</h2>
+          <p class="muted">You will be taken to our secure client portal to sign in.</p>
+          <a class="btn btn-dark btn-block" id="portalBtn" href="#">Continue to Secure Portal</a>
+          <div class="form-status" id="portalNote" aria-live="polite"></div>
+
+          <hr style="border:0;border-top:1px solid var(--line);margin:1.75rem 0">
+
+          <h3>New to the portal?</h3>
+          <p class="muted">Request login access and our team will share your credentials.</p>
+          <form data-ajax data-subject="Client portal access request" novalidate>
+            <div class="field">
+              <label for="lpName">Full name <span class="req">*</span></label>
+              <input id="lpName" name="name" type="text" autocomplete="name" required>
+              <span class="error">Please enter your name.</span>
+            </div>
+            <div class="field">
+              <label for="lpPhone">Registered mobile <span class="req">*</span></label>
+              <input id="lpPhone" name="phone" type="tel" autocomplete="tel" required>
+              <span class="error">Please enter a valid mobile number.</span>
+            </div>
+            <div class="field">
+              <label for="lpEmail">Registered email <span class="req">*</span></label>
+              <input id="lpEmail" name="email" type="email" autocomplete="email" required>
+              <span class="error">Please enter a valid email address.</span>
+            </div>
+            <input type="hidden" name="request" value="Client portal access">
+            <div class="hp" aria-hidden="true"><input type="text" name="_honey" tabindex="-1" autocomplete="off"></div>
+            <button type="submit" class="btn btn-primary btn-block">Request Access</button>
+            <div class="form-status" aria-live="polite"></div>
+          </form>
+          <p class="muted mt-1 mb-0" style="font-size:.85rem">For your security, we will never ask for your password, OTP or PIN over phone, SMS or email.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="assets/js/layout.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
